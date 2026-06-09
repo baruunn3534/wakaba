@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+  わかば駐輪場 ウェブサイト
+  ============================
+  
+-->
+<html lang="ja">
+<head>
+  <!-- 文字コード。日本語が文字化けせんようにするおまじない -->
+  <meta charset="UTF-8" />
+  <!-- スマホで見たときに、ちゃんとスマホ幅で表示されるようにする設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 検索結果やブラウザのタブに出るタイトル -->
+  <title>わかば駐輪場｜JR西大路駅すぐの自転車駐輪場</title>
+  <!-- 検索結果に出る説明文。検索対策（SEO）の基本 -->
+  <meta name="description" content="JR西大路駅からすぐ。一時利用も月極も対応の、まちの駐輪場「わかば駐輪場」。料金・営業時間・アクセスのご案内。" />
+
+  <!-- Google Fonts から日本語フォントを読み込み（公開したら自動で効く） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- 見た目の設定ファイルを読み込み -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== 上部の固定ナビ ===== -->
+  <header class="site-header">
+    <a href="#top" class="logo">
+      <span class="logo-leaf" aria-hidden="true">🌿</span>
+      わかば駐輪場
+    </a>
+    <nav class="nav">
+      <a href="#price">料金</a>
+      <a href="#guide">ご利用案内</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <!-- ===== ヒーロー（一番上の主役エリア） ===== -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="eyebrow">JR西大路駅から歩道橋渡ってすぐ</p>
+      <h1>とめやすい、<br />つづけやすい、<br />まちの駐輪場。</h1>
+      <p class="hero-lead">
+        毎日の通勤・通学に。わかば駐輪場は、地域の自転車を<br />
+        ちょっと支える、西大路の駐輪場です。
+      </p>
+      <div class="hero-actions">
+        <a href="#price" class="btn btn-primary">料金を見る</a>
+        <a href="#access" class="btn btn-ghost">場所を確認する</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 料金 ===== -->
+  <section class="section" id="price">
+    <div class="section-head">
+      <span class="leaf-marker" aria-hidden="true"></span>
+      <h2>料金</h2>
+      <p class="section-sub">使い方に合わせて、ふたつのプランがあります。</p>
+    </div>
+
+    <div class="price-grid">
+      <!-- 一時利用 -->
+      <div class="price-card">
+        <h3>一時利用</h3>
+        <p class="price-desc">たまに使う方・お買い物のときに。</p>
+        <p class="price-amount">
+          <!-- 【要編集】本物の料金に書き換える -->
+          <span class="num">160</span><span class="yen">円 / 日</span>
+        </p>
+        <ul class="price-notes">
+          <li>当日いつでも出し入れOK</li>
+          <li>事前の手続き不要</li>
+        </ul>
+      </div>
+<!-- バイク（一時利用） -->
+      <div class="price-card">
+        <h3>一時利用（バイク・原付）</h3>
+        <p class="price-desc">原付・バイクをとめたい方に。</p>
+        <p class="price-amount">
+          <span class="num">260</span><span class="yen">円 / 日 〜</span>
+        </p>
+        <ul class="price-notes">
+          <li>大きさによって料金が変わります</li>
+          <li>詳しくはお気軽にお問い合わせください</li>
+        </ul>
+      </div>
+      <!-- 月極 -->
+      <div class="price-card price-card--feature">
+        <span class="badge">おすすめ</span>
+         <h3>月極（自転車）</h3>
+        <p class="price-desc">毎日使う方に、いちばんお得。</p>
+        <p class="price-amount">
+          <!-- 【要編集】本物の料金に書き換える -->
+          <span class="num">2,800</span><span class="yen">円 / 月</span>
+          <p class="price-student">🎓 学生料金 <span class="student-num">2,500</span> 円 / 月</p>
+        </p>
+        <ul class="price-notes">
+          <li>専用スペースで毎日とめ放題
+          </li>
+          <li>申し込みは窓口で</li>
+        </ul>
+      </div>
+      <!-- 月極（バイク） -->
+      <div class="price-card">
+        <h3>月極（バイク・原付）</h3>
+        <p class="price-desc">バイク・原付を毎日とめる方に。</p>
+        <p class="price-amount">
+          <span class="num">4,600</span><span class="yen">円 / 月 〜</span>
+        </p>
+        <ul class="price-notes">
+          <li>大きさによって料金が変わります</li>
+          <li>申し込みは窓口またはお電話で</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine-print">※ 表示はすべて税込です。料金は変更になる場合があります。</p>
+  </section>
+
+  <!-- ===== ご利用案内 ===== -->
+  <section class="section section--tint" id="guide">
+    <div class="section-head">
+      <span class="leaf-marker" aria-hidden="true"></span>
+      <h2>ご利用案内</h2>
+    </div>
+
+    <div class="guide-grid">
+      <div class="guide-item">
+        <h3>営業時間</h3>
+        <!-- 【要編集】本物の営業時間に -->
+        <p>6:00 〜 22:00<br /><span class="muted">（年中無休(三が日を除く)）</span></p>
+      </div>
+      <div class="guide-item">
+        <h3>うれしいポイント</h3>
+        <!-- 【要編集】当てはまるものに -->
+        <p>屋根あり／見守りカメラ設置</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== アクセス ===== -->
+  <section class="section" id="access">
+    <div class="section-head">
+      <span class="leaf-marker" aria-hidden="true"></span>
+      <h2>アクセス</h2>
+    </div>
+
+    <div class="access-grid">
+      <div class="access-info">
+        <h3>住所</h3>
+        <!-- 【要編集】本物の住所に -->
+        <p>京都市南区唐橋西平垣町36<br /><span class="muted">JR「西大路」駅 徒歩1分</span></p>
+
+        <h3>駐車（一時）</h3>
+        <p>自転車のみ（原付・バイクは要相談）</p>
+      </div>
+
+      <!-- 地図。下のsrcを、本物のGoogleマップ埋め込みURLに差し替えるだけでOK -->
+      <!-- 差し替え方は、このページを渡したあとに説明するで -->
+      <div class="map-wrap">
+        <iframe
+          title="わかば駐輪場の地図"
+          src="https://www.google.com/maps?q=わかば駐輪場&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== お問い合わせ ===== -->
+  <section class="section section--tint" id="contact">
+    <div class="section-head">
+      <span class="leaf-marker" aria-hidden="true"></span>
+      <h2>お問い合わせ</h2>
+      <p class="section-sub"></p>
+    </div>
+
+    <div class="contact-actions">
+      <!-- 【要編集】本物の電話番号に。tel: のあとも同じ番号にする -->
+      <a class="btn btn-primary" href="tel:075-691-7725">📞 075-691-7725 に電話する</a>
+      <!-- 【要編集】Xアカウントが出来たらリンク先を差し替える -->
+      <a class="btn btn-ghost" href="https://x.com/wakaba1122338" target="_blank" rel="noopener">𝕏 最新の空き状況を見る</a>
+    </div>
+  </section>
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <p class="footer-logo">🌿 わかば駐輪場</p>
+    <p class="muted">京都市南区／JR西大路駅を歩道橋渡ってすぐ</p>
+    <p class="copyright">© 2026 わかば駐輪場</p>
+  </footer>
+
+</body>
+</html>
